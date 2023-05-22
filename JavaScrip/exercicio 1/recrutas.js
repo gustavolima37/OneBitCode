@@ -1,11 +1,11 @@
-let primeiroNome
-let sobreNome
-let estudo
-let anoDeNascimento
+const primeiroNome = prompt("Informe o primeiro nome do recruta:")
+const sobrenome = prompt("Informe o sobrenome do recruta:")
+const campoDeEstudo = prompt("Qual é o campo de estudo do recruta?")
+const anoDeNascimento = prompt("Qual é o ano de nascimento do recruta?")
 
-primeiroNome = prompt("Digite seu nome:" )
-sobreNome = prompt("Digite seu sobrenome:")
-estudo = prompt("Digite seu campo de estudos:")
-anoDeNascimento = prompt("Digite seu ano de nascimento:")
-
-alert("Recuta Cadastrado com Sucesso! \n" + "Nome completo: " + " " + primeiroNome + " " + sobreNome + "\n Campo de estudo: " + estudo + "\n Idade: " + (2023 - anoDeNascimento ))
+alert(
+    "Recruta Cadastrado com Sucesso!" + 
+    "\nNome Completo: " + primeiroNome + " " + sobrenome + 
+    "\nCampo de estudo: " + campoDeEstudo + 
+    "\nIdade: " + (2023 - anoDeNascimento)
+)
