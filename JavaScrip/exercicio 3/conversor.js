@@ -1,3 +1,4 @@
+const medida
 const medida = prompt("Digite um numero em metros, para converter em: \na) milímetro \nb) centímetro \nc) decímetro \nd) decâmetro \ne) hectômetro \nf) quilômetro " )
 
 const medidaNumerica = parseFloat(medida)
