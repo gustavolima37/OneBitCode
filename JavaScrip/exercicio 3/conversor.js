@@ -1,26 +1,34 @@
-const medida
-const medida = prompt("Digite um numero em metros, para converter em: \na) milímetro \nb) centímetro \nc) decímetro \nd) decâmetro \ne) hectômetro \nf) quilômetro " )
+const medida = prompt("Insira uma medida em metros:")
 
-const medidaNumerica = parseFloat(medida)
+const unidade = prompt(
+    "Para qual unidade de medida deseja converter?" +
+    "\n1. milímetros (mm)" + 
+    "\n2. centímetros (cm)" + 
+    "\n3. decímetros (dm)" + 
+    "\n4. decâmetros (dam)" + 
+    "\n5. hectômetros (hm)" + 
+    "\n6. quilômetros (km)" 
+)
 
-switch (medidaNumerica) {
-    case "a":
-        alert(medidaNumerica + " em milimetro é: " + (medidaNumerica / 1000))
+
+switch (unidade) {
+    case "1":
+        alert("Resultado: " + medida + "m = " + (medida * 1000) + "mm")
         break
-    case "b":
-        alert(medidaNumerica + " em milimetro é: " + (medmedidaNumericaida / 1000))
+    case "2":
+        alert("Resultado: " + medida + "m = " + (medida * 100) + "cm")
         break 
-    case "c":
-        alert(medidaNumerica + " em milimetro é: " + (medidaNumerica / 1000))
+    case "3":
+        alert("Resultado: " + medida + "m = " + (medida * 10) + "dm")
         break
-    case "d":
-        alert(medidaNumerica + " em milimetro é: " + (medidaNumerica / 1000))
+    case "4":
+        alert("Resultado: " + medida + "m = " + (medida / 10) + "dam")
         break 
-    case "e":
-        alert(medidaNumerica + " em milimetro é: " + (medidaNumerica / 1000))
+    case "5":
+        alert("Resultado: " + medida + "m = " + (medida / 100) + "hm")
         break 
-    case "f":
-        alert(medidaNumerica + " em milimetro é: " + (medidaNumerica / 1000))
+    case "6":
+        alert("Resultado: " + medida + "m = " + (medida / 1000) + "km")
         break 
     default:
         alert("Digite um numero valido!")
